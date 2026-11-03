@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klinik Sehat Sentosa | Pendaftaran Pasien</title>
+<style>
+:root{--teal:#07998e;--teal-dark:#087f78;--mint:#e8f7f5;--ink:#24323b;--muted:#71808a;--line:#e5ecee;--bg:#f3f6f7;--white:#fff;--gold:#f2b84b;--shadow:0 8px 28px rgba(28,65,72,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Arial,Helvetica,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:9px;padding:11px 17px;background:var(--teal);color:#fff;font-weight:700}button:hover{background:var(--teal-dark)}button.secondary{background:#e7f5f3;color:var(--teal-dark)}button.ghost{background:#fff;color:var(--teal);border:1px solid #cfe7e4}.wrap{max-width:1180px;margin:auto;padding:24px}.topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.topinner{max-width:1180px;margin:auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--teal-dark)}.brandmark{width:38px;height:38px;border-radius:11px;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:21px}.brand small{display:block;color:var(--muted);font-weight:400;font-size:11px}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a{color:#607078;text-decoration:none;padding:8px 10px;border-radius:8px}.nav a:hover{background:var(--mint);color:var(--teal-dark)}.hero{background:linear-gradient(115deg,#078f86,#12a99b);border-radius:18px;padding:30px;color:#fff;display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:center;box-shadow:var(--shadow)}.hero h1{font-size:30px;line-height:1.2;margin:8px 0}.hero p{max-width:520px;color:#e4fffc}.hero .tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:bold}.hero-art{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:24px;text-align:center;font-size:58px}.hero-art span{display:block;font-size:13px;margin-top:8px}.section-title{margin:28px 0 14px}.section-title h2{margin:0 0 4px;font-size:21px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}.card h3{margin:7px 0}.icon{width:42px;height:42px;border-radius:12px;background:var(--mint);color:var(--teal-dark);display:grid;place-items:center;font-size:21px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.layout{display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:start}.side,.panel{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.side{padding:16px;position:sticky;top:80px}.side h3{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}.side a{display:block;text-decoration:none;color:#52636b;padding:10px;border-radius:8px;margin:3px 0}.side a.active,.side a:hover{background:var(--mint);color:var(--teal-dark);font-weight:bold}.panel{padding:24px}.eyebrow{color:var(--teal);font-size:11px;letter-spacing:1px;font-weight:800;text-transform:uppercase}.panel h2{margin:5px 0 4px;font-size:23px}.progress{display:flex;gap:5px;margin:18px 0 24px}.progress span{height:5px;border-radius:10px;background:#e8eeee;flex:1}.progress span.on{background:var(--teal)}.choice-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.choice{border:1px solid var(--line);border-radius:12px;padding:15px;display:flex;gap:12px;align-items:center;cursor:pointer;background:#fff}.choice:hover{border-color:var(--teal)}.choice input{accent-color:var(--teal);width:17px;height:17px}.choice strong{display:block}.choice small{color:var(--muted)}.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.field label{display:block;font-weight:700;font-size:12px;margin-bottom:6px;color:#53636b}.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid #dce5e7;border-radius:8px;background:#fff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px #e4f5f3}.field.full{grid-column:1/-1}.summary{background:#f7fbfb;border:1px solid var(--line);border-radius:12px;padding:16px}.summary-row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}.summary-row:last-child{border:0}.success{text-align:center;padding:35px 15px}.check{width:70px;height:70px;border-radius:50%;background:#dcf7e9;color:#1caa69;display:grid;place-items:center;font-size:35px;margin:0 auto 16px}.ticket{max-width:330px;margin:20px auto;background:#f2fbfa;border:1px dashed var(--teal);border-radius:14px;padding:18px}.ticket strong{display:block;font-size:38px;color:var(--teal);letter-spacing:2px}.staffhead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}.stat strong{display:block;font-size:25px;margin-top:5px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;background:#fff}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);white-space:nowrap}th{font-size:11px;color:var(--muted);text-transform:uppercase;background:#f8fbfb}.badge{padding:5px 8px;border-radius:20px;font-size:11px;background:#fff4dc;color:#a56b00}.badge.done{background:#e4f8ee;color:#16804c}.hidden{display:none!important}.footer{text-align:center;color:var(--muted);padding:28px 10px;margin-top:30px;border-top:1px solid var(--line)}.note{font-size:12px;color:var(--muted);background:#fff8e8;border:1px solid #f3dfae;padding:11px;border-radius:9px;margin-top:14px}
+@media(max-width:760px){.topinner{align-items:flex-start;flex-direction:column}.nav{font-size:12px}.wrap{padding:15px}.hero{grid-template-columns:1fr;padding:23px}.hero-art{display:none}.grid{grid-template-columns:1fr}.layout{grid-template-columns:1fr}.side{position:static;display:flex;gap:5px;overflow:auto;white-space:nowrap}.side h3{display:none}.side a{display:inline-block}.choice-list,.formgrid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.panel{padding:17px}.staffhead{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="topinner">
+  <div class="brand"><div class="brandmark">✚</div><div>Klinik Sehat Sentosa<small>Sistem Pendaftaran Pasien</small></div></div>
+  <nav class="nav"><a href="#beranda">Beranda</a><a href="#pendaftaran">Pendaftaran Pasien</a><a href="#petugas">Login Petugas</a></nav>
+ </div>
+</header>
+
+<main class="wrap">
+<section id="beranda">
+ <div class="hero">
+  <div><div class="tag">Layanan kesehatan terpercaya</div><h1>Pendaftaran Pasien<br>lebih mudah dan cepat.</h1><p>Daftarkan kunjungan Anda secara online. Pilih poli, dokter, dan jadwal pemeriksaan sebelum datang ke klinik.</p><div class="actions"><button onclick="show('step-poli')">Mulai Pendaftaran →</button><button class="secondary" onclick="show('login')">Masuk Petugas</button></div></div>
+  <div class="hero-art">✚<span>SEHAT • NYAMAN • TERPERCAYA</span></div>
+ </div>
+ <div class="section-title"><h2>Layanan Klinik</h2><p class="muted">Pilih layanan sesuai kebutuhan pemeriksaan Anda.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">♡</div><h3>Poli Umum</h3><p class="muted">Pemeriksaan kesehatan umum dan konsultasi dokter.</p></article>
+  <article class="card"><div class="icon">✦</div><h3>Poli Gigi</h3><p class="muted">Pemeriksaan dan perawatan kesehatan gigi.</p></article>
+  <article class="card"><div class="icon">♧</div><h3>Poli Anak</h3><p class="muted">Pelayanan kesehatan untuk bayi dan anak.</p></article>
+ </div>
+</section>
+
+<section id="pendaftaran" class="section-title"><h2>Pendaftaran Pasien</h2><p class="muted">Ikuti tahapan pendaftaran berikut sampai selesai.</p></section>
+<div class="layout">
+ <aside class="side">
+  <h3>Alur pendaftaran</h3>
+  <a href="#" id="nav-poli" class="active" onclick="show('step-poli');return false">01 · Pilih Poli</a>
+  <a href="#" id="nav-dokter" onclick="show('step-dokter');return false">02 · Pilih Dokter</a>
+  <a href="#" id="nav-jadwal" onclick="show('step-jadwal');return false">03 · Pilih Jadwal</a>
+  <a href="#" id="nav-data" onclick="show('step-data');return false">04 · Data Pasien</a>
+  <a href="#" id="nav-konfirmasi" onclick="show('step-konfirmasi');return false">05 · Konfirmasi</a>
+  <a href="#" id="nav-berhasil" onclick="show('step-berhasil');return false">06 · Berhasil</a>
+ </aside>
+ <div class="panel">
+  <div id="step-poli" class="step">
+   <div class="eyebrow">Langkah 1 dari 6</div><h2>Pilih Poli</h2><p class="muted">Pilih poli tujuan pemeriksaan Anda.</p><div class="progress"><span class="on"></span><span></span><span></span><span></span><span></span><span></span></div>
+   <div class="choice-list">
+    <label class="choice"><input type="radio" name="poli" value="Poli Umum" checked><span><strong>Poli Umum</strong><small>Pemeriksaan umum</small></span></label>
+    <label class="choice"><input type="radio" name="poli" value="Poli Gigi"><span><strong>Poli Gigi</strong><small>Kesehatan gigi dan mulut</small></span></label>
+    <label class="choice"><input type="radio" name="poli" value="Poli Anak"><span><strong>Poli Anak</strong><small>Kesehatan bayi dan anak</small></span></label>
+    <label class="choice"><input type="radio" name="poli" value="Poli Kandungan"><span><strong>Poli Kandungan</strong><small>Kesehatan ibu</small></span></label>
+   </div><div class="actions"><button onclick="show('step-dokter')">Lanjut Pilih Dokter →</button></div>
+  </div>
+
+  <div id="step-dokter" class="step hidden">
+   <div class="eyebrow">Langkah 2 dari 6</div><h2>Pilih Dokter</h2><p class="muted">Pilih dokter untuk pemeriksaan Anda.</p><div class="progress"><span class="on"></span><span class="on"></span><span></span><span></span><span></span><span></span></div>
+   <div class="choice-list">
+    <label class="choice"><input type="radio" name="dokter" value="dr. Andi Saputra" checked><span><strong>dr. Andi Saputra</strong><small>Dokter Umum · Tersedia</small></span></label>
+    <label class="choice"><input type="radio" name="dokter" value="dr. Siti Amelia"><span><strong>dr. Siti Amelia</strong><small>Dokter Umum · Tersedia</small></span></label>
+    <label class="choice"><input type="radio" name="dokter" value="dr. Budi Santoso"><span><strong>dr. Budi Santoso</strong><small>Dokter Gigi · Tersedia</small></span></label>
+    <label class="choice"><input type="radio" name="dokter" value="dr. Rina Putri"><span><strong>dr. Rina Putri</strong><small>Dokter Anak · Tersedia</small></span></label>
+   </div><div class="actions"><button class="ghost" onclick="show('step-poli')">← Kembali</button><button onclick="show('step-jadwal')">Lanjut Pilih Jadwal →</button></div>
+  </div>
+
+  <div id="step-jadwal" class="step hidden">
+   <div class="eyebrow">Langkah 3 dari 6</div><h2>Pilih Jadwal</h2><p class="muted">Tentukan tanggal dan waktu kunjungan.</p><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div>
+   <div class="formgrid"><div class="field"><label>Tanggal Pemeriksaan</label><input type="date" id="tanggal" required></div><div class="field"><label>Jam Pemeriksaan</label><select id="jam"><option>08.00 WIB</option><option>09.00 WIB</option><option>10.00 WIB</option><option>11.00 WIB</option><option>13.00 WIB</option><option>14.00 WIB</option><option>15.00 WIB</option></select></div></div>
+   <div class="actions"><button class="ghost" onclick="show('step-dokter')">← Kembali</button><button onclick="show('step-data')">Lanjut Isi Data →</button></div>
+  </div>
+
+  <div id="step-data" class="step hidden">
+   <div class="eyebrow">Langkah 4 dari 6</div><h2>Data Pasien</h2><p class="muted">Lengkapi identitas pasien dengan benar.</p><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div>
+   <form id="patientForm" onsubmit="event.preventDefault();fillSummary();show('step-konfirmasi')">
+    <div class="formgrid">
+     <div class="field"><label>Nama Lengkap</label><input id="nama" required placeholder="Masukkan nama lengkap"></div>
+     <div class="field"><label>NIK</label><input id="nik" required maxlength="16" inputmode="numeric" placeholder="16 digit NIK"></div>
+     <div class="field"><label>Tempat Lahir</label><input id="tempat" required placeholder="Tempat lahir"></div>
+     <div class="field"><label>Tanggal Lahir</label><input id="lahir" type="date" required></div>
+     <div class="field"><label>Jenis Kelamin</label><select id="gender" required><option value="">Pilih jenis kelamin</option><option>Laki-laki</option><option>Perempuan</option></select></div>
+     <div class="field"><label>Nomor HP</label><input id="telepon" type="tel" required placeholder="08xxxxxxxxxx"></div>
+     <div class="field full"><label>Alamat</label><textarea id="alamat" rows="2" required placeholder="Masukkan alamat lengkap"></textarea></div>
+     <div class="field full"><label>Keluhan</label><textarea id="keluhan" rows="2" placeholder="Ceritakan keluhan Anda"></textarea></div>
+    </div>
+    <div class="actions"><button type="button" class="ghost" onclick="show('step-jadwal')">← Kembali</button><button type="submit">Lanjut Konfirmasi →</button></div>
+   </form>
+  </div>
+
+  <div id="step-konfirmasi" class="step hidden">
+   <div class="eyebrow">Langkah 5 dari 6</div><h2>Konfirmasi Pendaftaran</h2><p class="muted">Periksa kembali informasi pendaftaran Anda.</p><div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+   <div class="summary" id="summary"></div><div class="note">Pastikan data sudah benar sebelum menyelesaikan pendaftaran.</div>
+   <div class="actions"><button class="ghost" onclick="show('step-data')">Ubah Data</button><button onclick="show('step-berhasil')">Konfirmasi & Daftar ✓</button></div>
+  </div>
+
+  <div id="step-berhasil" class="step hidden">
+   <div class="success"><div class="check">✓</div><div class="eyebrow">Pendaftaran selesai</div><h2>Pendaftaran Berhasil!</h2><p class="muted">Terima kasih. Silakan simpan nomor antrean Anda.</p><div class="ticket"><small>NOMOR ANTREAN ANDA</small><strong>A-012</strong><span id="ticketDate">Klinik Sehat Sentosa</span></div><p>Mohon datang sesuai jadwal dan membawa identitas diri.</p><button onclick="window.print()">Cetak Bukti Pendaftaran</button> <button class="secondary" onclick="location.reload()">Kembali ke Beranda</button></div>
+  </div>
+ </div>
+</div>
+
+<section id="petugas" class="section-title"><h2>Area Petugas</h2><p class="muted">Akses khusus untuk petugas Klinik Sehat Sentosa.</p></section>
+<div class="panel" id="login">
+ <div class="eyebrow">Akses petugas</div><h2>Login Petugas</h2><p class="muted">Masuk untuk mengelola pendaftaran pasien.</p>
+ <form id="loginForm" onsubmit="event.preventDefault();showStaff()">
+  <div class="formgrid"><div class="field"><label>Username</label><input id="username" required placeholder="Masukkan username"></div><div class="field"><label>Password</label><input id="password" type="password" required placeholder="Masukkan password"></div></div>
+  <div class="actions"><button type="submit">Masuk Dashboard →</button></div>
+ </form>
+ <div class="note">Demo prototipe: formulir login ini belum memeriksa akun atau password sungguhan.</div>
+</div>
+
+<div id="staff" class="hidden">
+ <div class="staffhead"><div><div class="eyebrow">Panel administrasi</div><h2>Dashboard Resepsionis</h2><p class="muted">Ringkasan aktivitas pendaftaran pasien.</p></div><button class="secondary" onclick="hideStaff()">Keluar</button></div>
+ <div class="stats"><div class="stat"><span class="muted">Total Pasien</span><strong>48</strong><small>Data contoh</small></div><div class="stat"><span class="muted">Pendaftaran Hari Ini</span><strong>12</strong><small>Data contoh</small></div><div class="stat"><span class="muted">Menunggu</span><strong>3</strong><small>Data contoh</small></div><div class="stat"><span class="muted">Selesai</span><strong>33</strong><small>Data contoh</small></div></div>
+ <div class="panel" style="margin-top:16px"><div class="staffhead"><div><h2>Daftar Pasien</h2><p class="muted">Contoh data pendaftaran.</p></div><button onclick="document.getElementById('staffForm').classList.toggle('hidden')">+ Pendaftaran Pasien Baru</button></div>
+  <div class="tablewrap"><table><thead><tr><th>No</th><th>Nama Pasien</th><th>Poli</th><th>Dokter</th><th>Jam</th><th>Status</th></tr></thead><tbody id="patientRows"><tr><td>01</td><td>Andi Saputra</td><td>Poli Umum</td><td>dr. Andi</td><td>08.00</td><td><span class="badge">Menunggu</span></td></tr><tr><td>02</td><td>Siti Aminah</td><td>Poli Gigi</td><td>dr. Budi</td><td>09.00</td><td><span class="badge done">Selesai</span></td></tr><tr><td>03</td><td>Budi Santoso</td><td>Poli Anak</td><td>dr. Rina</td><td>10.00</td><td><span class="badge">Menunggu</span></td></tr></tbody></table></div>
+ </div>
+ <div class="panel hidden" id="staffForm" style="margin-top:16px"><h2>Pendaftaran Pasien Baru</h2><form onsubmit="addPatient(event)"><div class="formgrid">
+  <div class="field"><label>Nama Pasien</label><input id="snama" required></div><div class="field"><label>NIK</label><input id="snik" maxlength="16" required></div>
+  <div class="field"><label>Nomor HP</label><input id="shp" required></div><div class="field"><label>Poli</label><select id="spoli"><option>Poli Umum</option><option>Poli Gigi</option><option>Poli Anak</option><option>Poli Kandungan</option></select></div>
+  <div class="field"><label>Dokter</label><select id="sdokter"><option>dr. Andi Saputra</option><option>dr. Siti Amelia</option><option>dr. Budi Santoso</option><option>dr. Rina Putri</option></select></div><div class="field"><label>Tanggal Kunjungan</label><input type="date" id="stanggal" required></div>
+  <div class="field"><label>Jam Kunjungan</label><select id="sjam"><option>08.00</option><option>09.00</option><option>10.00</option><option>11.00</option><option>13.00</option><option>14.00</option><option>15.00</option></select></div>
+ </div><div class="actions"><button type="submit">Simpan Pendaftaran</button></div></form></div>
+</div>
+<footer class="footer">© 2026 Klinik Sehat Sentosa · Sistem Pendaftaran Pasien</footer>
+</main>
+
+<script>
+function show(id){
+ document.querySelectorAll('.step').forEach(el=>el.classList.add('hidden'));
+ const target=document.getElementById(id);
+ if(target) target.classList.remove('hidden');
+ const map={'step-poli':'poli','step-dokter':'dokter','step-jadwal':'jadwal','step-data':'data','step-konfirmasi':'konfirmasi','step-berhasil':'berhasil'};
+ document.querySelectorAll('.side a').forEach(a=>a.classList.remove('active'));
+ if(map[id]) document.getElementById('nav-'+map[id]).classList.add('active');
+ if(id.startsWith('step-')) document.getElementById('pendaftaran').scrollIntoView({behavior:'smooth'});
+}
+function val(id){return document.getElementById(id).value || '-'}
+function fillSummary(){
+ const poli=document.querySelector('input[name="poli"]:checked')?.value||'-';
+ const dokter=document.querySelector('input[name="dokter"]:checked')?.value||'-';
+ const rows=[['Nama pasien',val('nama')],['NIK',val('nik')],['Jenis kelamin',val('gender')],['Nomor HP',val('telepon')],['Alamat',val('alamat')],['Poli',poli],['Dokter',dokter],['Tanggal',val('tanggal')],['Jam',val('jam')],['Keluhan',val('keluhan')]];
+ document.getElementById('summary').innerHTML=rows.map(r=>`<div class="summary-row"><span class="muted">${r[0]}</span><strong>${escapeHtml(r[1])}</strong></div>`).join('');
+ document.getElementById('ticketDate').textContent=val('tanggal')+' · '+val('jam');
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function showStaff(){document.getElementById('login').classList.add('hidden');document.getElementById('staff').classList.remove('hidden');document.getElementById('staff').scrollIntoView({behavior:'smooth'})}
+function hideStaff(){document.getElementById('staff').classList.add('hidden');document.getElementById('login').classList.remove('hidden')}
+function addPatient(e){
+ e.preventDefault();
+ const tr=document.createElement('tr');
+ const n=document.querySelectorAll('#patientRows tr').length+1;
+ const values=[String(n).padStart(2,'0'),val('snama'),val('spoli'),val('sdokter'),val('sjam'),'<span class="badge">Menunggu</span>'];
+ values.forEach((v,i)=>{const td=document.createElement('td');if(i===5)td.innerHTML=v;else td.textContent=v;tr.appendChild(td)});
+ document.getElementById('patientRows').appendChild(tr);
+ document.getElementById('staffForm').classList.add('hidden');
+ e.target.reset();
+ alert('Data pasien ditambahkan ke tabel demo. Data tidak tersimpan permanen.');
+}
+</script>
+</body>
+</html>
